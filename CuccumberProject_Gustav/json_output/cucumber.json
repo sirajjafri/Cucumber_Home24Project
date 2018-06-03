@@ -1,0 +1,312 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 18,
+        "name": "Registering user on Home24",
+        "description": "",
+        "id": "www.home24.de-registration-scenario;registering-user-on-home24;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 17465710764,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on prelogin Home page",
+            "match": {
+              "location": "RegistrationStepDefinition.user_is_on_prelogin_Home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 69972817,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "title of the page is correct",
+            "match": {
+              "location": "RegistrationStepDefinition.title_of_the_page_is_correct()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7248542402,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Clicks on Signin button",
+            "match": {
+              "location": "RegistrationStepDefinition.clicks_on_Signin_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3020488507,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user redirects to registration page",
+            "match": {
+              "location": "RegistrationStepDefinition.user_redirects_to_registration_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 12310808348,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks on Continue button and enters \"Siraj\", \"Jafri\", \"Church road\", \"20801\", \"Bermingham\", \"mlp@gmail.com\", \"Test@123\", \"Test@123\" and clicks Continue button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Siraj",
+                  "offset": 43
+                },
+                {
+                  "val": "Jafri",
+                  "offset": 52
+                },
+                {
+                  "val": "Church road",
+                  "offset": 61
+                },
+                {
+                  "val": "20801",
+                  "offset": 76
+                },
+                {
+                  "val": "Bermingham",
+                  "offset": 85
+                },
+                {
+                  "val": "mlp@gmail.com",
+                  "offset": 99
+                },
+                {
+                  "val": "Test@123",
+                  "offset": 116
+                },
+                {
+                  "val": "Test@123",
+                  "offset": 128
+                }
+              ],
+              "location": "RegistrationStepDefinition.user_clicks_on_Continue_button_and_enters_and_clicks_Continue_button(String,String,String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 20483814,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user redirects to Home page post login",
+            "match": {
+              "location": "RegistrationStepDefinition.user_redirects_to_Home_page_post_login()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11433253846,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user logs out from homepage post login",
+            "match": {
+              "location": "RegistrationStepDefinition.user_logs_out_from_homepage_post_login()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 709643465,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "close the browser",
+            "match": {
+              "location": "RegistrationStepDefinition.close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "Registering user on Home24",
+        "description": "",
+        "id": "www.home24.de-registration-scenario;registering-user-on-home24;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 16710226291,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on prelogin Home page",
+            "match": {
+              "location": "RegistrationStepDefinition.user_is_on_prelogin_Home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15115074,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "title of the page is correct",
+            "match": {
+              "location": "RegistrationStepDefinition.title_of_the_page_is_correct()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4504912420,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Clicks on Signin button",
+            "match": {
+              "location": "RegistrationStepDefinition.clicks_on_Signin_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3029497988,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user redirects to registration page",
+            "match": {
+              "location": "RegistrationStepDefinition.user_redirects_to_registration_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11661187847,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks on Continue button and enters \"Siraj\", \"Jafri\", \"Church road\", \"20801\", \"Bermingham\", \"nkp@gmail.com\", \"Test@123\", \"Test@123\" and clicks Continue button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Siraj",
+                  "offset": 43
+                },
+                {
+                  "val": "Jafri",
+                  "offset": 52
+                },
+                {
+                  "val": "Church road",
+                  "offset": 61
+                },
+                {
+                  "val": "20801",
+                  "offset": 76
+                },
+                {
+                  "val": "Bermingham",
+                  "offset": 85
+                },
+                {
+                  "val": "nkp@gmail.com",
+                  "offset": 99
+                },
+                {
+                  "val": "Test@123",
+                  "offset": 116
+                },
+                {
+                  "val": "Test@123",
+                  "offset": 128
+                }
+              ],
+              "location": "RegistrationStepDefinition.user_clicks_on_Continue_button_and_enters_and_clicks_Continue_button(String,String,String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 18882109,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user redirects to Home page post login",
+            "match": {
+              "location": "RegistrationStepDefinition.user_redirects_to_Home_page_post_login()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11044612210,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user logs out from homepage post login",
+            "match": {
+              "location": "RegistrationStepDefinition.user_logs_out_from_homepage_post_login()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1187613627,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "close the browser",
+            "match": {
+              "location": "RegistrationStepDefinition.close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "www.home24.de Registration scenario",
+    "description": "",
+    "id": "www.home24.de-registration-scenario",
+    "keyword": "Feature",
+    "uri": "C:/Users/Siraj Jafri/git/CuccumberProject_Gustav/src/main/java/Features/RegistrationUser.feature"
+  }
+]
