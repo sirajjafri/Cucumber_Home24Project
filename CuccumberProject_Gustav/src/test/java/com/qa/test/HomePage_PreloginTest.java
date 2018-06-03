@@ -27,7 +27,7 @@ public class HomePage_PreloginTest extends TestBase {
 	RegistrationPage r_page;
 	
 	@BeforeSuite
-	public void initializationNew() throws IOException{
+	public void initializationNew() throws IOException, InterruptedException{
 	 initialization();
 	 h_prelogin = new HomePage_Prelogin();
 	 r_page = new RegistrationPage();

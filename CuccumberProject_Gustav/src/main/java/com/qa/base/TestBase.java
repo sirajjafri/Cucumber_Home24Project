@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -17,8 +18,9 @@ public class TestBase {
 	public TestBase() throws IOException{
 		 prop = new Properties();
 		try {
-			FileInputStream fis = new FileInputStream("F:\\Automation\\CuccumberProject_Gustav\\src\\main\\java\\com\\qa\\config\\config.properties");
+			FileInputStream fis = new FileInputStream("C:\\Users\\Siraj Jafri\\git\\CuccumberProject_Gustav\\src\\main\\java\\com\\qa\\config\\config.properties");
 		prop.load(fis);
+		
 		
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -27,7 +29,7 @@ public class TestBase {
 		
 	}
 	
-	public void initialization() throws IOException{
+	public void initialization() throws IOException, InterruptedException{
 		String browser = prop.getProperty("browser");
 		if (browser.equals("chrome")){
 			System.setProperty("webdriver.chrome.driver", "I:\\Automation\\chromedriver\\New folder\\chromedriver.exe");
@@ -41,6 +43,8 @@ public class TestBase {
 		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.get(prop.getProperty("url"));
+		
 	}
 }

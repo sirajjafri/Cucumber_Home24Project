@@ -1,6 +1,7 @@
 package com.qa.pages;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.maven.model.Build;
 import org.openqa.selenium.WebElement;
@@ -18,10 +19,10 @@ public class HomePage_Postlogin extends TestBase {
 		
 	}
 	
-	@FindBy(xpath= "(//*[contains(text(),'My account')])[1]")
+	@FindBy(xpath= "(//span[contains(text(),'Mein Konto')])[1]")
 	WebElement MyAccount;
 	
-	@FindBy(xpath= "(//font[@style='vertical-align: inherit;'])[1]")
+	@FindBy(xpath= "//a[@class='GN-myAccountStyles__link acte-header-logout-lnk']")
 	WebElement signOutLink;
 	
 public String CurrentURL(){
@@ -37,12 +38,14 @@ public String CurrentURL(){
 		return MyAccount.isDisplayed();
 	}
 	
-	public HomePage_Prelogin SignOut() throws IOException{
+	public void SignOut() throws IOException, InterruptedException{
+	
 		Actions action = new Actions(driver);
+		Thread.sleep(2000);
 		action.moveToElement(MyAccount).build().perform();
 		signOutLink.isDisplayed();
 		signOutLink.click();
-		return new HomePage_Prelogin();
+		Thread.sleep(3000);
 		
 	}
 }

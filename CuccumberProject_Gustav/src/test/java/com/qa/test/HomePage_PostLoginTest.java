@@ -39,8 +39,8 @@ public class HomePage_PostLoginTest extends TestBase {
 	}
 	
 	@Test(priority=4)
-	public void signOut() throws IOException{
-		h_prelogin = h_postlogin.SignOut();
+	public void signOut() throws IOException, InterruptedException{
+		h_postlogin.SignOut();
 	}
 
 }

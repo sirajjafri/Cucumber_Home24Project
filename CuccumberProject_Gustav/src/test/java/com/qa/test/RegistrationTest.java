@@ -26,13 +26,14 @@ public class RegistrationTest extends TestBase{
 	RegistrationPage r_page;
 	
 	
-	/*public void initialization() throws IOException{
-	 initialization();
+	public void initialization() throws IOException, InterruptedException{
 	 h_postlogin = new HomePage_Postlogin();
 	 h_prelogin = new HomePage_Prelogin();
 	 r_page = new RegistrationPage();
-	 r_page = h_prelogin.signup();
-	 }*/
+	 
+		r_page = h_prelogin.signup();
+	}
+
 	
 	
 	@Test(priority=1)
@@ -57,8 +58,8 @@ public class RegistrationTest extends TestBase{
 	}
 	
 		@Test(priority=4)
-		public void Fill_SignUpForm() throws IOException{
-			h_postlogin= r_page.signUpForm("dilshad", "jafri", "abc@gmail.com", "Test@123", "Test@123");
+		public void Fill_SignUpForm() throws IOException, InterruptedException{
+			r_page.signUpForm("dilshad", "jafri", "New road", "20801", "Ireland", "abh@gmail.com", "Test@123", "Test@123");
 		}	
 
 		/*@AfterSuite
